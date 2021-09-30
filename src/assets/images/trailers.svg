@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.959" height="33.838" viewBox="0 0 41.959 33.838">
+  <g id="trailer" transform="translate(0 -48)">
+    <g id="Group_2" data-name="Group 2" transform="translate(18.949 73.717)">
+      <g id="Group_1" data-name="Group 1">
+        <path id="Path_4" data-name="Path 4" d="M226.707,352a2.707,2.707,0,1,0,2.707,2.707A2.71,2.71,0,0,0,226.707,352Zm0,4.061a1.354,1.354,0,1,1,1.354-1.354A1.355,1.355,0,0,1,226.707,356.061Z" transform="translate(-224 -352)" fill="#f15d2a"/>
+      </g>
+    </g>
+    <g id="Group_4" data-name="Group 4" transform="translate(16.242 71.01)">
+      <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
+        <path id="Path_5" data-name="Path 5" d="M206.889,320a5.417,5.417,0,0,0-4.737,2.8,5.414,5.414,0,1,0,0,5.23A5.413,5.413,0,1,0,206.889,320Zm-9.475,9.475a4.061,4.061,0,1,1,4.061-4.061A4.065,4.065,0,0,1,197.414,329.475Zm9.475,0a4.061,4.061,0,1,1,4.061-4.061A4.065,4.065,0,0,1,206.889,329.475Z" transform="translate(-192 -320)" fill="#f15d2a"/>
+      </g>
+    </g>
+    <g id="Group_6" data-name="Group 6" transform="translate(28.424 73.717)">
+      <g id="Group_5" data-name="Group 5">
+        <path id="Path_6" data-name="Path 6" d="M338.707,352a2.707,2.707,0,1,0,2.707,2.707A2.71,2.71,0,0,0,338.707,352Zm0,4.061a1.354,1.354,0,1,1,1.354-1.354A1.355,1.355,0,0,1,338.707,356.061Z" transform="translate(-336 -352)" fill="#f15d2a"/>
+      </g>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(0 48)">
+      <g id="Group_7" data-name="Group 7" transform="translate(0 0)">
+        <path id="Path_7" data-name="Path 7" d="M41.959,52.061V48H2.03v4.061h2.03V65.6H1.354V68.98H0v4.737H2.707v1.354H4.061v6.091H8.121V75.071h6.371l5.414-5.414H32.881l3.384,3.384h5.694V68.98h-2.03V52.061ZM2.707,66.949H4.061v2.03H2.707Zm0,4.061v1.354H1.354v-2.03H4.061v.677Zm4.061,8.8H5.414V75.071H6.768Zm33.838-9.475v1.354h-3.78L33.442,68.3h-14.1l-5.414,5.414H4.061V72.363h9.078l5.414-5.414H34.235l3.384,3.384ZM34.515,58.151V65.6H30.454V53.414H29.1V65.6H25.04V53.414H23.687V65.6H19.626V53.414H18.273V65.6h-.28L12.578,71.01H5.414V52.061H38.575V68.98h-.4l-2.31-2.31V58.151ZM3.384,50.707V49.354H40.606v1.354Z" transform="translate(0 -48)" fill="#f15d2a"/>
+      </g>
+    </g>
+    <g id="Group_10" data-name="Group 10" transform="translate(7.384 65.326)">
+      <g id="Group_9" data-name="Group 9" transform="translate(0 0)">
+        <rect id="Rectangle_1" data-name="Rectangle 1" width="2" height="4" transform="translate(-0.052 -0.058)" fill="#f15d2a"/>
+      </g>
+    </g>
+    <g id="Group_12" data-name="Group 12" transform="translate(7.384 53.653)">
+      <g id="Group_11" data-name="Group 11" transform="translate(0 0)">
+        <rect id="Rectangle_2" data-name="Rectangle 2" width="2" height="11" transform="translate(-0.052 -0.386)" fill="#f15d2a"/>
+      </g>
+    </g>
+    <g id="Group_14" data-name="Group 14" transform="translate(13.22 53.653)">
+      <g id="Group_13" data-name="Group 13" transform="translate(0 0)">
+        <rect id="Rectangle_3" data-name="Rectangle 3" width="1" height="16" transform="translate(0.112 -0.386)" fill="#f15d2a"/>
+      </g>
+    </g>
+    <g id="Group_16" data-name="Group 16" transform="translate(34.23 53.653)">
+      <g id="Group_15" data-name="Group 15" transform="translate(0 0)">
+        <rect id="Rectangle_4" data-name="Rectangle 4" width="1" height="4" transform="translate(0.101 -0.386)" fill="#f15d2a"/>
+      </g>
+    </g>
+  </g>
+</svg>
