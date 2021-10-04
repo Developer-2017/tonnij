@@ -1,0 +1,17 @@
+@import 'mixins';
+@import 'variables';
+.order-greeting {
+    width: 100%;
+}
+
+::ng-deep {
+    .cdk-overlay-pane {
+        &.cancel-remark-dialog {
+            width: 400px;
+            @include breakpoint(phone-landscape) {
+                min-width: 95vw !important;
+                max-width: 95vw !important;
+            }
+        }
+    }
+}

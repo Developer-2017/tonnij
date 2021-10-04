@@ -1,0 +1,20 @@
+<div class="modal-head">
+    <h4>Send Broadcast</h4>
+    <i class="material-icons" (click)="closeDialog()">close</i>
+</div>
+<mat-dialog-content class="mat-typography">
+    <form>
+        <div class="order-greeting">
+            <mat-form-field appearance="outline">
+                <mat-label>Message</mat-label>
+                <textarea matInput type="text" formControlName="remarks" maxlength="250" appTonnijNotSpecialChars="noSpecialChars"></textarea>
+            </mat-form-field>
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <div class="btn-wrap text-right">
+        <button class="btn btn-secondary">Cancel</button>
+        <button class="btn btn-primary text-white">Submit</button>
+    </div>
+</mat-dialog-actions>

@@ -1,0 +1,25 @@
+<div>
+    <label></label>
+    <div href="" class="demo-gallery-poster img-preview-wrap" [ngClass]="zoomGallery ? 'zoom-gallery' : ''">
+        <i class="material-icons close-gallery" *ngIf="zoomGallery">close</i>
+        <img appImagLoader src="" alt="image small" class="image_preview"/>
+        <img src="" alt="image small" class="image_preview"  />
+        
+        <img appImagLoader src="" alt="image small" class="image_preview" />
+        <img src="" alt="image small" class="image_preview" />
+
+    </div>
+    <div class="form-group">
+        <div class="row ml-1">
+            <mat-radio-group formControlName="status">
+                <mat-radio-button class="col-md-6">Approve</mat-radio-button>
+                <mat-radio-button class="col-md-6">Reject</mat-radio-button>
+            </mat-radio-group>
+
+        </div>
+        <mat-form-field appearance='outline'>
+            <mat-label>Reason<span class="text-primary">*</span></mat-label>
+            <input matInput placeholder="Enter Rejection Reason">
+        </mat-form-field>
+    </div>
+</div>

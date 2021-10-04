@@ -1,1 +1,112 @@
-<p>dashboard works!</p>
+<div class="container-fluid page-body-wrapper paper-wrap bevel tlbr">
+    <div class="main-panel">
+
+        <div id="paper-top" class="paper-top">
+            <h4 class="text-primary">
+                <mat-icon class="text-grey">dashboard</mat-icon> Dashboard
+            </h4>
+            <div class="devider-vertical visible-lg"></div>
+
+        </div>
+        <div class="row mt-20">
+            <div class="col-md-4 card-col">
+                <div class="card" id="A1" [routerLink]="['/admin/new-registered']">
+                    <div class="card-ribbon">
+                        <p ID="lblTodaysUser" Text="0"> New</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="assets/images/registration.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>New User Registered</h4>
+                    </div>
+                    <img src="assets/images/arrow.svg" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 card-col">
+                <div class="card" id="A1" [routerLink]="['/admin/all-registered']">
+                    <div class="card-ribbon">
+                        <p ID="lblTotalUser" Text="0"> New</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="assets/images/avatar.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>User Registered</h4>
+                    </div>
+                    <img src="assets/images/arrow.svg" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 card-col">
+                <div class="card" id="A1" [routerLink]="['/admin/pending_approvals']">
+                    <div class="card-ribbon">
+                        <p ID="lblTotalApproval" Text="0"> New</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="assets/images/docs.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Submitted Documents</h4>
+                    </div>
+                    <img src="assets/images/arrow.svg" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 card-col">
+                <div class="card" id="A1" [routerLink]="['/admin/pending_approvals']">
+                    <div class="card-ribbon">
+                        <p ID="lblpendingapproval" Text="0"> New</p>
+                    </div>
+                    <div class="card-img">
+                        <img src="assets/images/pending.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pending Approvals</h4>
+                    </div>
+                    <img src="assets/images/arrow.svg" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 card-col">
+                <div class="card" id="A1" [routerLink]="['/admin/new-registered']">
+                    <div class="card-img">
+                        <img src="assets/images/dollar.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Total Revenue</h4>
+                    </div>
+                    <img src="assets/images/arrow.svg" class="arrow" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 card-col">
+                <div class="card" id="A1" [routerLink]="['/admin/new-registered']">
+                    <div class="card-img">
+                        <img src="assets/images/sand-timer.svg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h4>Total Request</h4>
+                    </div>
+                    <img src="assets/images/arrow.svg" class="arrow" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt30">
+
+            <div class="col-md-6 mb30 mt-4">
+                <div class="card card1">
+                    <h5 class="sub-sub-heading">
+                        Total Revenue
+                    </h5>
+                    <img src="assets/images/download.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6 mb30 mt-4">
+                <div class="card card1">
+                    <h5 class="sub-sub-heading">
+                        Total Revenue
+                    </h5>
+                    <img src="assets/images/download.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+@import 'mixins';
+@import 'variables';
+.card-col {
+    margin-top: 30px;
+    @include breakpoint(tablet) {
+        // margin-top: 15px;
+    }
+}
+.card {
+    border: none;
+    @include boxShadow(0, 4px, 8px, 0);
+    background: $white;
+    padding: 15px;
+    @include borderRadius();
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+    overflow: inherit;
+    .card-img {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #FFEDE7;
+    }
+    .card-content {
+        padding-left: 15px;
+        h4 {
+            margin: 0;
+            color: $secondary;
+            @include fonts(16px, 1.4, 500);
+        }
+    }
+    .arrow {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 15px;
+    }
+    &.card1 {
+        display: block;
+        cursor: auto;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.sub-sub-heading {
+    @include fonts(16px, 1.4, 500);
+    color: $secondary;
+}
+
+.card-ribbon {
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    background: $primary;
+    width: auto;
+    min-width: 50px;
+    padding: 0 10px;
+    height: 32px;
+    border-radius: 5px 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 14px solid #DC5C30;
+        right: -10px;
+        top: -1px;
+    }
+    p {
+        margin: 0;
+        color: $white;
+    }
+}
+
+::ng-deep {
+    .mdi-bell {
+        &::before {
+            transform: none;
+        }
+    }
+}
+
+.mb30 {
+    @include breakpoint(tablet) {
+        margin-bottom: 15px;
+    }
+}

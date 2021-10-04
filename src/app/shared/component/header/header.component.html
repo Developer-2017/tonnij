@@ -1,7 +1,7 @@
 <div class="horizontal-menu">
     <nav class="navbar top-navbar col-lg-12 col-12 p-0">
         <div class="container-fluid container-custom">
-            <div class="navbar-menu-wrapper d-flex align-items-center">
+            <div class="navbar-menu-wrapper d-flex align-items-center" *ngIf="showHead">
                 <div class="input-group">
                     <marquee width="100%" direction="left">
                         <!-- {{(defaultFormat$|async)?.adminMarque}} -->
@@ -19,7 +19,7 @@
                     <li class="nav-item nav-profile dropdown mr-0 mr-sm-2">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
                             <img src="assets/images/favicon.png" alt="profile" />
-                            <span class="nav-profile-name"></span>
+                            <span class="nav-profile-name">Welcome Admin</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                             <a class="dropdown-item" [routerLink]="['/admin/all-activities']">
@@ -40,9 +40,9 @@
     <div>
         <div class="mobile-menu">
             <img src="assets/images/tonnij-logo-beta.png" class="image">
-            <span class="mdi mdi-menu close-menu"></span>
+            <span class="mdi mdi-menu close-menu" (click)="toggle()"></span>
         </div>
-        <nav class="bottom-navbar" [ngClass]="toggleMenu ? 'show':'hide'">
+        <nav class="bottom-navbar" [ngClass]="toggleMenu ? 'show':'hide'" *ngIf="showHead">
             <div class="container-fluid container-custom">
                 <div id="userDashboard" class="main-menu-wrapper">
                     <a class="nav-branding" [routerLink]="['/admin/dashboard']">
@@ -51,11 +51,11 @@
                     <ul class="nav page-navigation">
                          <li class="nav-item">
                             <a class="nav-link" [routerLink]="['/admin/dashboard']" >
-                                <mat-icon class="text-primary">dashboard</mat-icon> <span class="menu-title">Dashboard</span>
+                                <i class="mdi mdi-view-dashboard menu-icon"></i> <span class="menu-title">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" [routerLink]="['/admin/pending_approvals']">
+                            <a class="nav-link" [routerLink]="['/admin/document-list']">
                                 <i class="mdi mdi-file-document menu-icon"></i>
                                 <span class="menu-title">Approve Documents</span>
                             </a>
@@ -66,7 +66,7 @@
                                 <span class="menu-title">Manage Company</span>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a [routerLink]="['/admin/manage-load']" class="nav-link">
                                 <i class="mdi mdi-buffer menu-icon"></i>
                                 <span class="menu-title">Manage Load</span>
@@ -77,7 +77,7 @@
                                 <i class="mdi mdi-truck menu-icon"></i>
                                 <span class="menu-title">Manage Truck</span>
                             </a>
-                        </li>
+                        </li> -->
                         <!-- <li class="nav-item">
                   <a [routerLink]="['/admin/manage-invoice']" class="nav-link" >
                             <i class="mdi mdi-file-pdf menu-icon"></i>
@@ -85,7 +85,7 @@
                         </a>
                   </li> -->
                         <li class="nav-item">
-                            <a [routerLink]="['/admin/manage-staff']" class="nav-link">
+                            <a class="nav-link" [routerLink]="['/admin/manage-staff']">
                                 <i class="mdi mdi-account menu-icon"></i>
                                 <span class="menu-title">Add Staff</span>
                             </a>
@@ -102,7 +102,7 @@
                                 <ul class="submenu-item">
                                     <li class="nav-item">
                                         <a class="nav-link" [routerLink]="['/admin/web-request']"> 
-                                            <i class="mdi mdi-qqchat menu-icon text-primary"></i> Web Request</a>
+                                            <i class="mdi mdi-qqchat menu-icon "></i> Web Request</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" [routerLink]="['/admin/invoice-request']"> 
@@ -112,7 +112,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="cursor: pointer;">
+                            <a class="nav-link" (click)="sendBroadcast()" style="cursor: pointer;">
                                 <i class="mdi mdi-amplifier menu-icon"></i>
                                 <span class="menu-title">Broadcast</span>
                             </a>
@@ -123,7 +123,7 @@
             </div>
         </nav>
 
-        <div class="backdrop" [ngClass]="toggleMenu ? 'show':'hide'"></div>
+        <div class="backdrop" [ngClass]="toggleMenu ? 'show':'hide'" (click)="toggle()"></div>
     </div>
     <router-outlet></router-outlet>
 </div>

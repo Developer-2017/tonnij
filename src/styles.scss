@@ -238,6 +238,9 @@ body {
     height: 20px;
     line-height: 17px;
 }
+  .badge i{
+       line-height: 1.5;
+  }
 
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
     border-color: $primary;
@@ -278,7 +281,6 @@ body {
 .horizontal-menu .bottom-navbar .page-navigation>.nav-item.mega-menu .submenu .category-heading {
     color: #f35e2e !important;
 }
-
 .text-grey {
     color: #638186;
 }
@@ -335,7 +337,7 @@ body {
 .text-primary,
 .list-wrapper .completed .remove,
 .horizontal-menu .bottom-navbar .page-navigation>.nav-item.mega-menu .submenu .category-heading {
-    color: #f35e2e;
+    color: #f35e2e !important;
 }
 
 .text-grey {
@@ -442,7 +444,7 @@ h4,
             border-bottom-width: 1px;
             font-weight: 500;
             font-size: .875rem;
-            color: #f35e2e;
+            color: #f35e2e !important;
             vertical-align: bottom;
             border-bottom: 2px solid #f3f3f3;
             line-height: 1;
@@ -499,8 +501,7 @@ h4,
 h5,
 .h5 {
     font-size: 1rem;
-}
-
+} 
 p {
     font-size: 0.775rem;
     margin-bottom: .5rem;
@@ -543,17 +544,18 @@ p {
     color: #f35e2e;
     background: #fff;
 }
-
 .container-fluid-custom {
     width: 95%;
 }
-
 .btn-custom {
     border: 1px solid white !important;
     color: #f35e2e;
     background: #fff;
 }
-
+ .text-white{
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+ }
 .container-fluid-custom {
     width: 95%;
 }
@@ -1080,6 +1082,9 @@ mat-form-field.mat-form-field.mat-form-field-appearance-outline>div.mat-form-fie
         margin-right: 30px;
         border-right: 1px solid #ddd;
         padding-right: 30px;
+        color: #f15d2a !important;
+        font-weight: 500;
+        font-size: 20px;
     }
     .text-grey {
         color: #638186;
@@ -1090,7 +1095,9 @@ mat-form-field.mat-form-field.mat-form-field-appearance-outline>div.mat-form-fie
         font-size: 0.875rem;
     }
 }
-
+.submenu-item li a i{
+    color: #f15d2a !important;  
+}
 .loader {
     width: 100%;
     height: 100%;
@@ -1109,7 +1116,6 @@ mat-form-field.mat-form-field.mat-form-field-appearance-outline>div.mat-form-fie
         animation: zoomIn 2s linear infinite alternate;
     }
 }
-
 @keyframes zoomIn {
     0% {
         transform: scale(1);

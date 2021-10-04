@@ -1,0 +1,103 @@
+<div class="modal-head">
+    <h4>Add Staff</h4>
+     <i class="material-icons" (click)="closeDialog()">close</i>
+ </div>
+ <div class="col-md-12 col-sm-12 mb-1">
+    <div class="list-group list-group-item">
+            <div class="row mt-2 mb-2">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="username">Role<span class="text-danger">*</span></label>
+                        <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>Manager</option>
+                            <option>Support</option>
+                        </select>    
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Staff Name</mat-label>
+                        <input matInput type="text" placeholder="Enter Staff name" >
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" placeholder="Enter Email" >
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="username">Password<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" /> 
+                    </div>
+                </div>
+                <ng-container >
+                    <div class="col-md-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Building Name</mat-label>
+                            <input matInput type="text" placeholder="Enter Building Name">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Street Address</mat-label>
+                            <input matInput type="text" placeholder="Enter Street Address">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>City</mat-label>
+                            <input matInput type="text" placeholder="Enter City">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Province</mat-label>
+                            <mat-select >
+                                <mat-option>Select</mat-option>
+                                <mat-option value="Alberta">Alberta</mat-option>
+                                <mat-option value="British Columbia">British Columbia</mat-option>
+                                <mat-option value="New Brunswick"
+                                  >New Brunswick</mat-option
+                                >
+                                <mat-option value="Newfoundland and Labrador"
+                                  >Newfoundland and Labrador</mat-option
+                                >
+                                <mat-option value="Northwest Territorie"
+                                >Northwest Territorie</mat-option
+                              >
+                              <mat-option value="Nova Scotia"
+                              >Nova Scotia</mat-option
+                            >
+                            <mat-option value="Nunavut">Nunavut</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Postal Code</mat-label>
+                            <input matInput type="tel" placeholder="Enter Postal Code">
+                        </mat-form-field>
+                    </div>
+                </ng-container>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Cellphone Number</mat-label>
+                        <input matInput type="tel" placeholder="Enter Cellphone Number" mask="(000) 000-0000" prefix="+1">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Office Number</mat-label>
+                        <input matInput type="tel" placeholder="Enter office number" mask="(000) 000-0000" prefix="+1">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-12 float-right">
+                    <a class="btn btn-primary float-right" href="#">Save</a>
+                    <a class="btn btn-light  float-right mr-2" href="#">Reset</a>
+                </div>
+            </div>
+        </div>
+    </div>
